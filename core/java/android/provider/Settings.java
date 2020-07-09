@@ -5113,6 +5113,14 @@ public final class Settings {
         public static final Validator STATUSBAR_CLOCK_AM_PM_STYLE_VALIDATOR =
                 new SettingsValidators.InclusiveIntegerRangeValidator(0, 2);
 
+        /**
+         * Screen off fod
+         * @hide
+         */
+        public static final String FOD_GESTURE = "fod_gesture";
+
+        /** @hide */
+        public static final Validator FOD_GESTURE_VALIDATOR = BOOLEAN_VALIDATOR;
 
         /**
          * Whether footer #DerpFest text shows
@@ -7457,6 +7465,7 @@ public final class Settings {
             VALIDATORS.put(QS_DRAG_HANDLE, QS_DRAG_HANDLE_VALIDATOR);
             VALIDATORS.put(QS_HIDE_BATTERY, QS_HIDE_BATTERY_VALIDATOR);
             VALIDATORS.put(QS_BATTERY_MODE, QS_BATTERY_MODE_VALIDATOR);
+            VALIDATORS.put(FOD_GESTURE, FOD_GESTURE_VALIDATOR);
             VALIDATORS.put(DERP_FOOTER_TEXT_SHOW, DERP_FOOTER_TEXT_SHOW_VALIDATOR);
             VALIDATORS.put(DERP_FOOTER_TEXT_STRING, DERP_FOOTER_TEXT_STRING_VALIDATOR);
             VALIDATORS.put(SHOW_QS_CLOCK, SHOW_QS_CLOCK_VALIDATOR);
